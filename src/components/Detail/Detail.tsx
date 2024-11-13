@@ -156,7 +156,7 @@ const Detail = (course: ICourse) => {
             <p className="py-1 text-xl text-center">
               Instructor: {course.instructor}
             </p>
-            <div className="text-center">
+            <div className="text-center mt-7">
               {isUserSubscribed ? (
                 isUserInscript ? (
                   <Button onClick={() => router.push(`/study/${course.id}`)}>

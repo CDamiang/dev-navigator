@@ -10,7 +10,7 @@ const About: React.FC = () => {
         </div>
         <div className="bg-primary p-6 text-secondary flex flex-col items-center justify-center">
           <h2 className="text-2xl font-bold text-secondary">Nuestra Misión</h2>
-          <p className="mt-4 text-lg text-secondary">
+          <p className="mt-4 text-lg text-justify text-secondary">
             En <b>Dev Navigator</b>, nos dedicamos a ofrecer la más alta calidad
             en productos tecnológicos, inspirados en la innovación y el diseño
             de marcas líderes como el <b>Google</b>. Nuestra misión es brindar a

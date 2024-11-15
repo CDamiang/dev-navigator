@@ -108,7 +108,7 @@ const Detail = (course: ICourse) => {
       : user?.user?.Subscription?.status_sub) === true;
 
   return (
-    <div className="container grid grid-cols-1 justify-center !mt-20 bg-primary border-2 text-secondary rounded-3xl p-4 shadow-lg shadow-gray-700/40 ">
+    <div className="container max-w-4xl grid grid-cols-1 justify-center !mt-20 bg-primary border-2 text-secondary rounded-3xl p-4 shadow-lg shadow-gray-700/40 ">
       <h1 className="text-center mt-5">{course?.title}</h1>
       <div className="mx-auto mb-16">
         <Image
@@ -125,14 +125,14 @@ const Detail = (course: ICourse) => {
           </p>
           <div className="flex flex-col justify-between items-center">
             <p className="py-1 text-xl text-center">
-              Tipo de Curso:{" "}
-              {(course.type ?? "").charAt(0).toUpperCase() +
-                (course.type ?? "").slice(1)}
+              Tipo de Curso:{' '}
+              {(course.type ?? '').charAt(0).toUpperCase() +
+                (course.type ?? '').slice(1)}
             </p>
             <p className="py-1 text-xl text-center">
-              Dificultad:{" "}
-              {(course.difficulty ?? "").charAt(0).toUpperCase() +
-                (course.difficulty ?? "").slice(1)}
+              Dificultad:{' '}
+              {(course.difficulty ?? '').charAt(0).toUpperCase() +
+                (course.difficulty ?? '').slice(1)}
             </p>
             <p className="py-1 text-xl text-center">
               Duración: {course.duration} horas
@@ -154,7 +154,7 @@ const Detail = (course: ICourse) => {
                   {isUserLoggedIn ? (
                     <BuyButton course={course} />
                   ) : (
-                    <Button onClick={() => router.push("/login")}>
+                    <Button onClick={() => router.push('/login')}>
                       Suscribirme
                     </Button>
                   )}

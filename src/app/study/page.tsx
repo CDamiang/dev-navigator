@@ -134,7 +134,7 @@ const Study: React.FC = () => {
   };
 
  return (
-   <div className="container mt-20 min-h-[calc(70vh-70px)] max-w-4xl">
+   <div className="container mt-20 min-h-[calc(70vh-70px)]">
      <h1 className="text-center">Mis Cursos</h1>
      {courses.length > 0 ? (
        <div className="container text-center !mt-5 flex gap-4 flex-col  md:flex-row lg:flex-row  lg:justify-center">

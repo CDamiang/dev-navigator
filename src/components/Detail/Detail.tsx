@@ -108,8 +108,8 @@ const Detail = (course: ICourse) => {
       : user?.user?.Subscription?.status_sub) === true;
 
   return (
-    <div className="container max-w-4xl grid grid-cols-1 justify-center !mt-20 bg-primary border-2 text-secondary rounded-3xl p-4 shadow-lg shadow-gray-700/40 ">
-      <h1 className="text-center mt-5">{course?.title}</h1>
+    <div className="container !max-w-4xl grid grid-cols-1 justify-center !mt-20 bg-primary border-2 text-secondary rounded-3xl p-4 shadow-lg shadow-gray-700/40 ">
+      <h1 className="text-center mt-5 text-4xl">{course?.title}</h1>
       <div className="mx-auto mb-16">
         <Image
           className="mix-blend-multiply object-contain mx-auto rounded-2xl mt-5"
@@ -119,8 +119,8 @@ const Detail = (course: ICourse) => {
           height={320}
         />
 
-        <div className="md:w-[800px]">
-          <p className="py-7 font-bold text-xl text-center">
+        <div className="container">
+          <p className="py-7 font-bold text-xl text-justify">
             {course?.description}
           </p>
           <div className="flex flex-col justify-between items-center">

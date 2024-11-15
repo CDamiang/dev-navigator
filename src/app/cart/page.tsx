@@ -239,15 +239,15 @@ const Page = () => {
                       Suscribite para iniciar el curso {course.title}
                     </span>
                   </div>
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <Button
-                      onClick={() => handleRemove(course.id, course.title)}
+                     // onClick={() => handleRemove(course.id, course.title)}
                       className={styles.buttonClearUnit}
                       aria-label={`Remove ${course.title} from cart`}
                     >
                       <FaRegTrashCan />
                     </Button>
-                  </div>
+                  </div> */}
                 </div>
               ))}
               <div className="bg-gray-50 p-4 rounded-lg flex flex-col sm:flex-row items-center justify-between">

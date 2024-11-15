@@ -241,7 +241,7 @@ const Page = () => {
                   </div>
                   <div className="flex items-center">
                     <Button
-                      // onClick={() => handleRemove(course.id, course.title)}
+                      onClick={() => handleRemove(course.id, course.title)}
                       className={styles.buttonClearUnit}
                       aria-label={`Remove ${course.title} from cart`}
                     >

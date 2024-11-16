@@ -7,10 +7,7 @@ export const fetchUserData = async (
   if (userId && token) {
     try {
       const url = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
-      const response = await axios.get(`${url}/user/${userId}`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
-
+      const response = await axios.get(`${url}/user/${userId}`);
       return response.data;
     } catch (error) {
       console.error("Error al obtener los datos del usuario:", error);
